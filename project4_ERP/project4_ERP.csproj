@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BCE36C3-19DC-4E3F-AA7B-F6DEA7CF5460}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project4_ERP</RootNamespace>
+    <AssemblyName>project4_ERP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_calinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_calinder.Designer.cs">
+      <DependentUpon>person_calinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_add_del.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_add_del.Designer.cs">
+      <DependentUpon>person_add_del.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_management.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_management.Designer.cs">
+      <DependentUpon>person_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_suggestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_suggestion.Designer.cs">
+      <DependentUpon>person_suggestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_teamchange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_teamchange.Designer.cs">
+      <DependentUpon>person_teamchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_pay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonnelDepartment_cs\person_pay.Designer.cs">
+      <DependentUpon>person_pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\daliy_report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\daliy_report.Designer.cs">
+      <DependentUpon>daliy_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\inventory_status.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\inventory_status.Designer.cs">
+      <DependentUpon>inventory_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\production_calinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\production_calinder.Designer.cs">
+      <DependentUpon>production_calinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\production_report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\production_report.Designer.cs">
+      <DependentUpon>production_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\production_suggestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\production_suggestion.Designer.cs">
+      <DependentUpon>production_suggestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\work_manual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductionDepartment_cs\work_manual.Designer.cs">
+      <DependentUpon>work_manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasingDepartment_cs\purchased_add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PurchasingDepartment_cs\purchased_add.Designer.cs">
+      <DependentUpon>purchased_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchasingDepartment_cs\purchasing_calinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PurchasingDepartment_cs\purchasing_calinder.Designer.cs">
+      <DependentUpon>purchasing_calinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchasingDepartment_cs\purchasing_inventory_status.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PurchasingDepartment_cs\purchasing_inventory_status.Designer.cs">
+      <DependentUpon>purchasing_inventory_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchasingDepartment_cs\purchasing_report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PurchasingDepartment_cs\purchasing_report.Designer.cs">
+      <DependentUpon>purchasing_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchasingDepartment_cs\purchasing_suggestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PurchasingDepartment_cs\purchasing_suggestion.Designer.cs">
+      <DependentUpon>purchasing_suggestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityDepartment_cs\imported_inspection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QualityDepartment_cs\imported_inspection.Designer.cs">
+      <DependentUpon>imported_inspection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityDepartment_cs\lot_report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QualityDepartment_cs\lot_report.Designer.cs">
+      <DependentUpon>lot_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityDepartment_cs\quality_calinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QualityDepartment_cs\quality_calinder.Designer.cs">
+      <DependentUpon>quality_calinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityDepartment_cs\quality_reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QualityDepartment_cs\quality_reports.Designer.cs">
+      <DependentUpon>quality_reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityDepartment_cs\quality_suggestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QualityDepartment_cs\quality_suggestion.Designer.cs">
+      <DependentUpon>quality_suggestion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelDepartment_cs\person_calinder.resx">
+      <DependentUpon>person_calinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelDepartment_cs\person_add_del.resx">
+      <DependentUpon>person_add_del.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelDepartment_cs\person_management.resx">
+      <DependentUpon>person_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelDepartment_cs\person_suggestion.resx">
+      <DependentUpon>person_suggestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelDepartment_cs\person_teamchange.resx">
+      <DependentUpon>person_teamchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelDepartment_cs\person_pay.resx">
+      <DependentUpon>person_pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionDepartment_cs\daliy_report.resx">
+      <DependentUpon>daliy_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionDepartment_cs\inventory_status.resx">
+      <DependentUpon>inventory_status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionDepartment_cs\production_calinder.resx">
+      <DependentUpon>production_calinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionDepartment_cs\production_report.resx">
+      <DependentUpon>production_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionDepartment_cs\production_suggestion.resx">
+      <DependentUpon>production_suggestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionDepartment_cs\work_manual.resx">
+      <DependentUpon>work_manual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PurchasingDepartment_cs\purchased_add.resx">
+      <DependentUpon>purchased_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchasingDepartment_cs\purchasing_calinder.resx">
+      <DependentUpon>purchasing_calinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchasingDepartment_cs\purchasing_inventory_status.resx">
+      <DependentUpon>purchasing_inventory_status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchasingDepartment_cs\purchasing_report.resx">
+      <DependentUpon>purchasing_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchasingDepartment_cs\purchasing_suggestion.resx">
+      <DependentUpon>purchasing_suggestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityDepartment_cs\imported_inspection.resx">
+      <DependentUpon>imported_inspection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityDepartment_cs\lot_report.resx">
+      <DependentUpon>lot_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityDepartment_cs\quality_calinder.resx">
+      <DependentUpon>quality_calinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityDepartment_cs\quality_reports.resx">
+      <DependentUpon>quality_reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityDepartment_cs\quality_suggestion.resx">
+      <DependentUpon>quality_suggestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
